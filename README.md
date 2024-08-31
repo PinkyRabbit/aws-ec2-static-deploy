@@ -8,7 +8,7 @@ Additionally, it can serve as a template for NGINX pages
 
 ## Deploy configuration
 
-To run the deployment, you need to configure the following variables in the github repository:
+To run the deployment, you need to configure the following variables (secrets) for your github repository:
 
 ### REMOTE_USER and EC2_SSH_KEY
 
@@ -25,10 +25,16 @@ sudo su - new_user
 cd /home/new_user/.ssh
 ssh-keygen -m PEM -t rsa -b 4096
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
-cat ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_rsa
 ```
 
 `new_user` = your user
+
+Note:
+
+`PUBLIC key` is for EC2 and you copy it with `cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys`
+
+`PRIVATE key` is for github. Fully copy it to `EC2_SSH_KEY`
 
 ### REMOTE_HOST 
 
