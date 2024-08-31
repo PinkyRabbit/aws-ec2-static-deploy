@@ -14,7 +14,10 @@ function server (cb) {
         "port": config.port
     });
 
-    gulp.watch("static/*.html").on(
+    gulp.watch([
+        "static/*.html",
+        "static/styles.css"
+    ]).on(
         "change",
         browserSync.reload
     );

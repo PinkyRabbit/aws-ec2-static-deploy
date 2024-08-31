@@ -1,0 +1,27 @@
+main {
+    display: flex;
+    background: #c4a89e;
+}
+div {
+    flex: 1;
+    height: 100vh;
+    max-height: 100vh;
+}
+img {
+    max-height: 100%;
+}
+.content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+h1 {
+    font-size: 5em;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 20px;
+    color: #3D2A21;
+}
+span {
+    color: #760807;
+}

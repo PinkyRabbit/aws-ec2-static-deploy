@@ -4,6 +4,7 @@ import functional from "eslint-plugin-functional";
 import stylisticJs from '@stylistic/eslint-plugin-js';
 
 export default [
+  {ignores: ["**/*.css"]},
   {files: ["**/*.js"], languageOptions: {sourceType: "commonjs"}},
   {files: ["**/*.mjs"], languageOptions: {sourceType: "module"}},
   {languageOptions: { globals: globals.browser }},
