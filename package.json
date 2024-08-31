@@ -1,0 +1,17 @@
+{
+  "name": "aws-ec2-static-deploy",
+  "version": "1.0.0",
+  "description": "Static page to test deployment on ec2",
+  "main": "index.js",
+  "author": "Mikita Melnikau <usesa@yandex.com>",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin-js": "^2.7.2",
+    "eslint": "^9.9.1",
+    "eslint-plugin-functional": "^7.0.2",
+    "gulp": "^5.0.0"
+  }
+}
