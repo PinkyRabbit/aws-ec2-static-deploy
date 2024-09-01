@@ -1,10 +1,10 @@
 # aws-ec2-static-deploy
 
-This project is a template.
+This project is a template of auto deploy the application from GitHub to AWS EC2.
 
-Its main goal is to deploy the application to AWS EC2 on a merge branch.
+It is implemented using the [easingthemes/ssh-deploy](https://github.com/easingthemes/ssh-deploy) action library. You can find a more detailed description of the configuration features there.
 
-Additionally, it can serve as a template for NGINX pages
+The template contains index.html, 404.html and 500.html pages that NGINX uses.
 
 ## Deploy configuration
 
@@ -42,10 +42,6 @@ Get it from AWS EC2 configuration.
 
 Sample:
 `ec2-34-213-48-149.us-west-2.compute.amazonaws.com`
-
-### 
-
-You need to generate it inside your EC2 instance with ``
 
 ### DIR_NAME 
 
